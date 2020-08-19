@@ -1,1 +1,5 @@
+file:
+  filePath: C:/uploadPath
 
+server:
+  port: 7777
