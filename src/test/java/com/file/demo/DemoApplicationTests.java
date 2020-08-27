@@ -1,5 +1,6 @@
 package com.file.demo;
 
+import com.deepoove.poi.XWPFTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.file.demo.config.BeanUtil;
 import com.file.demo.model.Demo;
@@ -10,12 +11,34 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.test.context.SpringBootTest;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 @SpringBootTest
 class DemoApplicationTests {
+
+
+    @Test
+    void word() throws IOException {
+        XWPFTemplate template = XWPFTemplate.compile("src/main/resources/template/template.docx").render(
+                new HashMap<String, Object>(){{
+                    put("name", "张三");
+                    put("age", "10");
+                    put("sex", "男");
+                }});
+        //结果文件输出地址
+        FileOutputStream out = new FileOutputStream("C:\\Users\\D\\Desktop\\out_template.docx");
+        template.write(out);
+        out.flush();
+        out.close();
+        template.close();
+    }
+
+
 
     /**
      * @Author zhang

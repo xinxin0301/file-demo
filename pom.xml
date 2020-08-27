@@ -20,6 +20,13 @@
 
 	<dependencies>
 
+		<!--word-->
+		<dependency>
+			<groupId>com.deepoove</groupId>
+			<artifactId>poi-tl</artifactId>
+			<version>1.8.2</version>
+		</dependency>
+
 		<!--ZIP 依赖-->
 		<!-- https://mvnrepository.com/artifact/net.lingala.zip4j/zip4j -->
 		<dependency>
