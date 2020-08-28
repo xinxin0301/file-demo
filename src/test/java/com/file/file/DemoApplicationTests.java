@@ -1,17 +1,16 @@
-package com.file.demo;
+package com.file.file;
 
 import com.deepoove.poi.XWPFTemplate;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.file.demo.config.BeanUtil;
-import com.file.demo.model.Demo;
-import com.file.demo.util.ZipUtil;
+import com.file.config.BeanUtil;
+import com.file.file.model.Demo;
+import com.file.util.ZipUtil;
 import net.lingala.zip4j.exception.ZipException;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.boot.test.context.SpringBootTest;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;

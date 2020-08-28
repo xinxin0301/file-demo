@@ -1,7 +1,7 @@
-package com.file.demo.controller;
+package com.file.file.controller;
 
-import com.file.demo.config.FileConfig;
-import com.file.demo.util.FileUtil;
+import com.file.config.FileConfig;
+import com.file.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;

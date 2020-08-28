@@ -1,4 +1,4 @@
-package com.file.demo.config;
+package com.file.config;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;

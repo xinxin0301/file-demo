@@ -1,4 +1,4 @@
-package com.file.demo.model;
+package com.file.file.model;
 
 import lombok.Getter;
 import lombok.Setter;

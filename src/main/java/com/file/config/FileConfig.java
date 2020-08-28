@@ -1,9 +1,7 @@
-package com.file.demo.config;
+package com.file.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-
-import java.io.File;
 
 /**
  * @Description //TODO 文件配置文件
